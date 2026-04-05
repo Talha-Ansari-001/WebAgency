@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-accent: #FF6B00;
+  --color-orange-hover: #E66000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  @apply text-slate-900 bg-white overflow-x-hidden;
+}
