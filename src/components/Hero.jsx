@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { HiCheckCircle } from 'react-icons/hi';
+import { HiCheckCircle, HiArrowRight } from 'react-icons/hi';
 
 const Hero = () => {
   const containerVariants = {
@@ -8,91 +8,100 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
+        staggerChildren: 0.15,
+        delayChildren: 0.2,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
   };
 
   return (
-    <div id='home' className='w-full min-h-screen pt-20 flex items-center bg-gradient-to-b from-orange-50/50 to-white'>
-      <div className='max-w-[1240px] w-full mx-auto px-4 py-16 flex flex-col justify-center items-center text-center'>
+    <div id='home' className='relative w-full min-h-screen flex items-center bg-[#0a0a0c] overflow-hidden'>
+      {/* Abstract Background Elements */}
+      <div className='absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none'></div>
+      <div className='absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none'></div>
+
+      <div className='max-w-[1240px] w-full mx-auto px-4 py-20 relative z-10'>
         <motion.div
           variants={containerVariants}
           initial='hidden'
           animate='visible'
-          className='max-w-4xl'
+          className='backdrop-blur-md bg-white/[0.02] border border-white/[0.05] rounded-[2rem] p-8 md:p-16 text-center shadow-2xl'
         >
-          <motion.p 
+          <motion.div 
             variants={itemVariants}
-            className='uppercase text-sm tracking-[0.2em] text-orange-accent font-bold mb-6'
+            className='inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full mb-8'
           >
-            Award-Winning Web Development Agency
-          </motion.p>
+            <span className='relative flex h-2 w-2'>
+              <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75'></span>
+              <span className='relative inline-flex rounded-full h-2 w-2 bg-orange-500'></span>
+            </span>
+            <span className='text-xs md:text-sm font-medium text-gray-300 tracking-wider uppercase'>
+              Next-Gen SaaS Development Agency
+            </span>
+          </motion.div>
           
           <motion.h1 
             variants={itemVariants}
-            className='text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8'
+            className='text-4xl md:text-7xl font-bold text-white leading-[1.1] mb-8 tracking-tight'
           >
-            We Help Businesses Get <br />
-            <span className='bg-gradient-to-r from-orange-accent to-orange-hover bg-clip-text text-transparent'>
-              More Customers Online
-            </span>
+            Engineering <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600'>Scalable SaaS</span> <br />
+            For Explosive <span className='italic font-light'>Business Growth</span>
           </motion.h1>
 
           <motion.p 
             variants={itemVariants}
-            className='text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed'
+            className='text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed'
           >
-            Get a high-converting website in <span className='font-bold text-slate-900 underline decoration-orange-accent'>5–7 days</span>. 
-            We build digital experiences that turn visitors into loyal customers.
+            Ash Core Technologies partners with founders to architect, build, and scale 
+            high-performance digital products that dominate markets and delight users.
           </motion.p>
 
           <motion.div 
             variants={itemVariants}
-            className='flex flex-col sm:flex-row items-center justify-center gap-6 mb-12'
+            className='flex flex-col sm:flex-row items-center justify-center gap-5 mb-16'
           >
             <Link to='contact' smooth={true} duration={500} offset={-80}>
               <motion.button 
-                whileHover={{ scale: 1.05, boxShadow: '0 20px 25px -5px rgba(255, 107, 0, 0.4)' }}
-                whileTap={{ scale: 0.95 }}
-                className='bg-gradient-to-r from-orange-accent to-orange-hover text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-orange-accent/20 transition-all duration-300'
+                whileHover={{ scale: 1.02, backgroundColor: '#f97316' }}
+                whileTap={{ scale: 0.98 }}
+                className='w-full sm:w-auto bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-colors'
               >
-                Get Your Website Today
+                Start Your Project <HiArrowRight />
               </motion.button>
             </Link>
             <Link to='portfolio' smooth={true} duration={500} offset={-80}>
               <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className='border-2 border-slate-900 text-slate-900 px-10 py-4 rounded-full hover:bg-slate-900 hover:text-white transition-all duration-300 font-bold text-lg'
+                whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.08)' }}
+                whileTap={{ scale: 0.98 }}
+                className='w-full sm:w-auto border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-sm transition-colors'
               >
-                View Our Work
+                View Case Studies
               </motion.button>
             </Link>
           </motion.div>
 
           <motion.div 
             variants={itemVariants}
-            className='flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-gray-600 font-medium border-t border-gray-100 pt-8'
+            className='grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-white/5'
           >
-            <div className='flex items-center gap-2'>
-              <HiCheckCircle className='text-green-500' size={20} />
-              <span>No hidden charges</span>
-            </div>
-            <div className='flex items-center gap-2'>
-              <HiCheckCircle className='text-green-500' size={20} />
-              <span>Fast delivery</span>
-            </div>
-            <div className='flex items-center gap-2'>
-              <HiCheckCircle className='text-green-500' size={20} />
-              <span>Free consultation</span>
-            </div>
+            {[
+              { label: 'SaaS Architecture', desc: 'Enterprise-grade foundations' },
+              { label: 'Rapid Scaling', desc: 'Built for millions of users' },
+              { label: 'Product Strategy', desc: 'Data-driven growth cycles' }
+            ].map((feature, i) => (
+              <div key={i} className='flex flex-col items-center sm:items-start text-center sm:text-left'>
+                <div className='flex items-center gap-2 text-orange-500 mb-1 font-bold'>
+                  <HiCheckCircle size={18} />
+                  <span>{feature.label}</span>
+                </div>
+                <p className='text-sm text-gray-500'>{feature.desc}</p>
+              </div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
@@ -101,3 +110,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

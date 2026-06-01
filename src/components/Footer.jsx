@@ -6,15 +6,22 @@ const Footer = () => {
     <footer className='bg-slate-900 text-white py-16 px-4'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-4 gap-12'>
         <div className='col-span-1 md:col-span-2'>
-          <h2 className='text-3xl font-bold text-orange-accent mb-6'>WEB<span className='text-white'>AGENCY</span></h2>
+          <div className='flex items-center gap-3 mb-6'>
+            <img src="/Logo.png" alt="Logo" className="h-12 w-auto object-contain mix-blend-multiply brightness-200 invert" />
+            <h2 className='text-3xl font-bold text-orange-accent'>AshCore<span className='text-white'>Technologies</span></h2>
+          </div>
           <p className='text-gray-400 mb-8 max-w-md'>
             We are a full-service web development agency dedicated to helping businesses grow their online presence with modern, high-performance websites.
           </p>
           <div className='flex gap-6'>
-            <FaFacebook size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
+            <a href="https://www.facebook.com/profile.php?id=61590195706215" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
+            </a>
             <FaTwitter size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
             <FaLinkedin size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
-            <FaInstagram size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
+            <a href="https://www.instagram.com/ashcoretechnologies/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={24} className='hover:text-orange-accent cursor-pointer transition-colors duration-300' />
+            </a>
           </div>
         </div>
         <div>
@@ -30,14 +37,14 @@ const Footer = () => {
         <div>
           <h3 className='text-xl font-bold mb-6'>Contact Info</h3>
           <ul className='space-y-4 text-gray-400'>
-            <li>123 Web Street, Digital City</li>
-            <li>contact@webagency.com</li>
-            <li>+91 98765 43210</li>
+            <li>Based in India | Serving Worldwide</li>
+            <li>ashcoretechnoglogies@gmail.com</li>
+            <li>+91 72492 37892</li>
           </ul>
         </div>
       </div>
       <div className='max-w-[1240px] mx-auto mt-16 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm'>
-        <p>&copy; {new Date().getFullYear()} WebAgency. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} AshCoreTechnologies. All rights reserved.</p>
       </div>
     </footer>
   );

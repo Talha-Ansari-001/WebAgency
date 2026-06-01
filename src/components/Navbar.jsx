@@ -50,15 +50,19 @@ const Navbar = () => {
       />
 
       <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16 max-w-[1400px] mx-auto'>
-        <Link to='home' smooth={true} duration={500} className='cursor-pointer group'>
-          <h2 className='text-3xl font-black tracking-tighter'>
-            <span className='text-orange-accent group-hover:text-orange-hover transition-colors'>WEB</span>
-            <span className={shadow ? 'text-slate-900' : 'text-slate-900'}>AGENCY</span>
-          </h2>
+        <Link to='home' smooth={true} duration={500} className='cursor-pointer flex items-center gap-3'>
+          <img 
+            src="/Logo.png" 
+            alt="Logo" 
+            className={`${shadow ? 'h-10' : 'h-14'} w-auto object-contain transition-all duration-300 mix-blend-multiply`}
+          />
+          <span className={`font-black tracking-tighter transition-all duration-300 ${shadow ? 'text-xl' : 'text-2xl'} text-slate-900`}>
+            AshCore<span className="text-orange-accent">Technologies</span>
+          </span>
         </Link>
         
-        <div>
-          <ul className='hidden lg:flex items-center'>
+        <div className='flex items-center'>
+          <ul className='hidden lg:flex items-center mr-10'>
             {navLinks.map((link) => (
               <li key={link.name} className='ml-10 text-sm font-black uppercase tracking-widest group'>
                 <Link 
@@ -75,22 +79,22 @@ const Navbar = () => {
             ))}
           </ul>
           
+          <div className='hidden lg:block'>
+            <Link to='contact' smooth={true} duration={500} offset={-80}>
+              <motion.button 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='bg-slate-900 text-white px-8 py-3 rounded-2xl font-black text-sm uppercase tracking-wider hover:bg-orange-accent transition-all duration-300 shadow-lg'
+              >
+                Start Your Project
+              </motion.button>
+            </Link>
+          </div>
+
           {/* Mobile Button */}
           <div onClick={handleClick} className='lg:hidden cursor-pointer p-2 hover:bg-gray-100 rounded-xl transition-colors'>
             {nav ? <HiX size={30} className='text-slate-900' /> : <HiMenu size={30} className='text-slate-900' />}
           </div>
-        </div>
-
-        <div className='hidden lg:block'>
-          <Link to='contact' smooth={true} duration={500} offset={-80}>
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className='bg-slate-900 text-white px-8 py-3 rounded-2xl font-black text-sm uppercase tracking-wider hover:bg-orange-accent transition-all duration-300 shadow-lg'
-            >
-              Start Your Project
-            </motion.button>
-          </Link>
         </div>
       </div>
 
@@ -109,7 +113,12 @@ const Navbar = () => {
         >
           <div className='flex flex-col h-full'>
             <div className='flex w-full items-center justify-between mb-12'>
-              <h2 className='text-3xl font-black tracking-tighter text-orange-accent'>WEB<span className='text-slate-900'>AGENCY</span></h2>
+              <div className='flex items-center gap-2'>
+                <img src="/Logo.png" alt="Logo" className="h-10 w-auto object-contain mix-blend-multiply" />
+                <span className='font-black tracking-tighter text-lg text-slate-900'>
+                  AshCore<span className="text-orange-accent">Technologies</span>
+                </span>
+              </div>
               <div
                 onClick={handleClick}
                 className='p-3 cursor-pointer bg-gray-100 rounded-2xl hover:bg-orange-accent hover:text-white transition-all'
