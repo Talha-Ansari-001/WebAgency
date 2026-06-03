@@ -38,7 +38,7 @@ const Footer = () => {
           <h3 className='text-xl font-bold mb-6'>Contact Info</h3>
           <ul className='space-y-4 text-gray-400'>
             <li>Based in India | Serving Worldwide</li>
-            <li>ashcoretechnoglogies@gmail.com</li>
+            <li>ashcoretechnologies@gmail.com</li>
             <li>+91 72492 37892</li>
           </ul>
         </div>

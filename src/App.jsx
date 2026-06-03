@@ -29,7 +29,7 @@ function App() {
       <FinalCTA />
       <Contact />
       <Footer />
-      <WhatsAppButton phoneNumber='+919876543210' />
+      <WhatsAppButton phoneNumber='917249237892' />
     </div>
   );
 }

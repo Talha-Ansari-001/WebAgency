@@ -33,9 +33,13 @@ The application is composed of several sections, each handled by a dedicated com
 - **Pricing**: Transparent pricing tiers using `PricingCard`.
 - **Testimonials**: Customer success stories and feedback.
 - **FinalCTA**: A concluding call to action before the footer.
-- **Contact**: Integrated contact form and location/contact details.
-- **Footer**: Site navigation, social links, and copyright information.
-- **WhatsAppButton**: A floating action button for direct client communication via WhatsApp.
+- **Contact**: Integrated contact form with Google Sheets backend (Google Apps Script) and verified business details (+91 72492 37892).
+- **Footer**: Site navigation, social links (FB/IG), and official email (ashcoretechnologies@gmail.com).
+- **WhatsAppButton**: A floating action button for direct client communication.
+
+## Contact Information
+- **Phone/WhatsApp:** +91 72492 37892
+- **Email:** ashcoretechnologies@gmail.com
 
 ## Development
 - **Dev Server:** `npm run dev`
