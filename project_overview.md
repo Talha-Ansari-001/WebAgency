@@ -27,7 +27,11 @@ The application follows a single-page architecture with the following modular se
 
 ### 3.2. Social Proof & Authority
 - **TrustBadgesRow:** Displays social proof or certifications to build immediate credibility.
-- **Testimonials:** Showcases customer success stories and feedback to establish trust.
+- **Benefits (What You Get):** Highlights the core value propositions:
+  - **More Customers:** Conversion-focused designs.
+  - **Better Online Presence:** Modern, professional branding.
+  - **Increased Sales:** Optimized user journeys.
+  - **Mobile-friendly:** Seamless experience across all devices.
 
 ### 3.3. Services Offering
 The agency provides four main tiers of service:
@@ -43,21 +47,33 @@ Showcases successful projects with metrics-driven descriptions:
 - **E-commerce Fashion:** 2x conversion rate.
 - **Real Estate Portal:** +40% leads.
 
-### 3.5. Success Roadmap (The Process)
+### 3.5. Why Choose Us (Competitive Edge)
+A detailed section explaining the agency's unique advantages:
+- **Ready in 7 Days:** Rapid development and launch.
+- **Built to Get Clients:** Lead generation-focused design.
+- **World-Class Branding:** Premium aesthetic for instant trust.
+- **Google Search Ready:** SEO-optimized from the ground up.
+- **1 Year Full Support:** Ongoing technical assistance.
+- **No Hidden Costs:** Transparent and honest pricing.
+
+### 3.6. Success Roadmap (The Process)
 A four-phase development lifecycle:
 1. **Discovery & Research:** Market analysis and goal setting.
 2. **Strategic UI/UX Design:** Wireframing and eye-tracking optimization.
 3. **High-Performance Coding:** Speed optimization and mobile-first approach.
 4. **Launch & Optimization:** Global deployment and 1-year priority support.
 
-### 3.6. Pricing Strategy
+### 3.7. Pricing Strategy
 Transparent pricing tiers (one-time payment, no monthly fees):
 - **Standard (₹14,999):** 5 Pages, Free Domain/Hosting, SSL.
 - **Premium (₹24,999):** 10 Pages, Advanced UI/UX, SEO optimized.
 - **Ecommerce (₹49,999):** 50 Products, Payment Gateway, Admin Dashboard.
 - **Custom:** Tailored for complex web applications.
 
-### 3.7. Conversion & Communication
+### 3.8. Testimonials
+Showcases customer success stories and feedback to establish trust through social proof.
+
+### 3.9. Conversion & Communication
 - **Final CTA:** A last-minute push to convert visitors before reaching the footer.
 - **Contact Form:** Integrated with a Google Sheets backend via Google Apps Script for automated lead capture.
 - **WhatsApp Button:** A floating action button for instant communication (+91 72492 37892).
@@ -70,7 +86,7 @@ Transparent pricing tiers (one-time payment, no monthly fees):
 - **Smooth Animations:** Integrated Framer Motion for a premium "app-like" feel with scroll-triggered entries.
 - **Direct Lead Gen:** Integrated contact form with custom validation styling and WhatsApp floating button.
 - **Visual Identity:** Modern dark-themed Hero section contrasted with clean, white content areas and vibrant orange accents (#f97316).
-- **Social Proof:** Dedicated sections for testimonials and trust badges to build immediate authority.
+- **Social Proof:** Dedicated sections for testimonials, trust badges, and benefits to build immediate authority.
 - **SEO Optimization:** Semantic HTML structure and performance-focused coding for fast indexing.
 - **Performance:** Optimized for sub-second load times using Vite's lightning-fast bundling.
 

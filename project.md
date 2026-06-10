@@ -1,13 +1,13 @@
-# Project: WebAgency
+# Project: Ash Core Technologies Web Agency
 
 ## Overview
-A high-converting, modern landing page for a Web Development Agency. Built with React, Vite, and Tailwind CSS, featuring smooth animations and a responsive design.
+A high-converting, modern landing page for **Ash Core Technologies**, a Web Development and SaaS Development Agency. Built with React 19, Vite, and Tailwind CSS 4, featuring smooth animations and a responsive design.
 
 ## Tech Stack
 - **Frontend Framework:** React 19 (Vite)
 - **Styling:** Tailwind CSS 4
 - **Animations:** Framer Motion
-- **Icons:** React Icons
+- **Icons:** React Icons (Hi, Fa)
 - **Navigation:** React Scroll (for smooth-scroll internal links)
 
 ## Project Structure
@@ -23,19 +23,19 @@ A high-converting, modern landing page for a Web Development Agency. Built with 
 The application is composed of several sections, each handled by a dedicated component in `src/components/`:
 
 - **Navbar**: Sticky header with navigation links and smooth scrolling.
-- **Hero**: The primary attention-grabbing section with a headline, sub-headline, and main CTAs.
+- **Hero**: High-impact section with headline, sub-headline, and main CTAs.
 - **TrustBadgesRow**: Displays social proof or certifications.
-- **Services**: Lists service offerings (Standard Website, Premium Website, E-commerce, Custom Web App).
+- **Services**: Lists service offerings (Standard, Premium, E-commerce, Custom).
 - **Portfolio**: Showcases previous projects using `PortfolioCard`.
-- **Benefits**: Highlights the value delivered to clients using `BenefitCard`.
-- **WhyChooseUs**: A detailed section explaining the agency's competitive advantages.
-- **Process**: Steps through the development workflow.
+- **Benefits**: Highlights the core value delivered to clients (More Customers, Better Online Presence, etc.).
+- **WhyChooseUs**: Explains the agency's competitive advantages (7-day delivery, 1-year support, etc.).
+- **Process**: Steps through the 4-phase development workflow.
 - **Pricing**: Transparent pricing tiers using `PricingCard`.
 - **Testimonials**: Customer success stories and feedback.
-- **FinalCTA**: A concluding call to action before the footer.
-- **Contact**: Integrated contact form with Google Sheets backend (Google Apps Script) and verified business details (+91 72492 37892).
-- **Footer**: Site navigation, social links (FB/IG), and official email (ashcoretechnologies@gmail.com).
-- **WhatsAppButton**: A floating action button for direct client communication.
+- **FinalCTA**: Concluding call to action.
+- **Contact**: Integrated contact form with Google Sheets backend and verified business details.
+- **Footer**: Site navigation, social links, and official email.
+- **WhatsAppButton**: Floating action button for direct communication (+91 72492 37892).
 
 ## Contact Information
 - **Phone/WhatsApp:** +91 72492 37892
@@ -45,3 +45,4 @@ The application is composed of several sections, each handled by a dedicated com
 - **Dev Server:** `npm run dev`
 - **Build:** `npm run build`
 - **Lint:** `npm run lint`
+- **Preview:** `npm run preview`
