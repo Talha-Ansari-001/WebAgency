@@ -36,11 +36,11 @@ const Portfolio = () => {
           className='text-center mb-16'
         >
           <h2 className='text-3xl md:text-5xl font-bold text-slate-900 mb-4'>
-            Our Recent <span className='text-orange-accent'>Work</span>
+            Our Recent <span className='text-orange-accent'>Work</span> & Case Studies
           </h2>
           <div className='w-20 h-1 bg-orange-accent mx-auto mb-6'></div>
           <p className='text-gray-600 max-w-2xl mx-auto text-lg'>
-            We deliver results-driven websites that help businesses grow. Take a look at some of our latest projects.
+            Explore how AshCore Technologies delivers results-driven websites and custom SaaS applications for clients in Mumbai, Thane, and globally.
           </p>
         </motion.div>
 
